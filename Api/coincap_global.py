@@ -1,4 +1,6 @@
-# Mastering The CoinMarketCap API with Python3
+# Ian Annase
+# Mastering The CoinMarketCap API with Python3 (last updated 2018)
+# Updated by Shabbir Mousavi 2020
 
 import dateutil.parser
 from datetime import datetime
@@ -25,7 +27,7 @@ session.headers.update(headers)
 try:
     response = session.get(url, params=parameters)
     results = response.json()
-    #print(json.dumps(results, sort_keys=True, indent=4))
+    # print(json.dumps(results, sort_keys=True, indent=4))
 except (ConnectionError, Timeout, TooManyRedirects) as e:
     print(e)
 
@@ -41,23 +43,40 @@ last_updated = dateutil.parser.isoparse(results['data']["last_updated"])
 global_cap = int(results['data']["quote"][currency]["total_market_cap"])
 global_volume = int(results['data']["quote"][currency]["total_volume_24h"])
 
-active_currencies_string = '{:,}'.format(active_cryptocurrencies)
-active_markets_string = '{:,}'.format(active_market_pairs)
-global_cap_string = '{:,}'.format(global_cap)
-global_volume_string = '{:,}'.format(global_volume)
+active_currencies_string = f'{active_cryptocurrencies:,}'
+active_markets_string = f'{active_market_pairs:,}'
+global_cap_string = f'{global_cap:,}'
+global_volume_string = f'{global_volume:,}'
+date = (
+    str(last_updated.year)
+    + "-"
+    + str(last_updated.month).zfill(2)
+    + "-"
+    + str(last_updated.day).zfill(2)
+)
 
 print()
-print('There are currently ' + active_currencies_string +
-      ' active cryptocurrecies and ' + active_markets_string + ' active markets.')
-print('The global cap of all cryptos is ' + global_cap_string +
-      ' and the 24h global volume is ' + global_volume_string + '.')
-print('Bitcoin\'s total percentage of the global cap is ' +
-      str(bitcoin_dominance) + '%.')
+
+print(
+    'There are currently',
+    active_currencies_string,
+    'active cryptocurrecies and',
+    active_markets_string,
+    'active markets.',
+)
+
+print(
+    'The global cap of all cryptos is',
+    global_cap_string,
+    'and the 24h global volume is',
+    global_volume_string + '.',
+)
+
+print(
+    'Bitcoin\'s total percentage of the global cap is',
+    str(bitcoin_dominance) + '%.',
+)
+
 print()
-print('This information was last updated on '
-      + str(last_updated.year)
-      + "-"
-      + str(last_updated.month).zfill(2)
-      + "-"
-      + str(last_updated.day).zfill(2)
-      + '.')
+
+print('This information was last updated on', date + '.')
