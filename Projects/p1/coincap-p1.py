@@ -1,4 +1,3 @@
-import os
 import json
 from requests import Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects

@@ -12,9 +12,9 @@ This Python project has 5 sub projects using sample cryptocurrency data from ['s
 
 for obtaining live results, replace the url and API key as following:
 
-1 - replace 'sandbox-api.coinmarketcap.com' 
+1. replace 'sandbox-api.coinmarketcap.com' 
     with pro-api.coinmarketcap.com
-2 - replace 'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c'
+2. replace 'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c' 
     with 'X-CMC_PRO_API_KEY': 'your API key'
 
 
