@@ -1,5 +1,5 @@
 # Ian Annase
-# Mastering The CoinMarketCap API with Python3 (last updated 2018)
+# Mastering The CoinMarketCap API with Python3
 # Updated by Shabbir Mousavi 2020
 
 import dateutil.parser
@@ -8,13 +8,13 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 
-currency = 'USD'  # JPY
+convert = 'USD'  # JPY
 
 url = 'https://sandbox-api.coinmarketcap.com/v1/global-metrics/quotes/latest'
 parameters = {
     # 'start':'1',
     # 'limit':'10',
-    'convert': currency
+    'convert': convert
 }
 headers = {
     'Accepts': 'application/json',
@@ -40,8 +40,8 @@ ethereum_dominance = results['data']["eth_dominance"]
 # from https://stackoverflow.com/a/15228038
 last_updated = dateutil.parser.isoparse(results['data']["last_updated"])
 
-global_cap = int(results['data']["quote"][currency]["total_market_cap"])
-global_volume = int(results['data']["quote"][currency]["total_volume_24h"])
+global_cap = int(results['data']["quote"][convert]["total_market_cap"])
+global_volume = int(results['data']["quote"][convert]["total_volume_24h"])
 
 active_currencies_string = f'{active_cryptocurrencies:,}'
 active_markets_string = f'{active_market_pairs:,}'

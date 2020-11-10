@@ -1,3 +1,6 @@
+# Ian Annase
+# Mastering The CoinMarketCap API with Python3
+# Updated by Shabbir Mousavi 2020
 
 import json
 from requests import Request, Session
@@ -5,13 +8,13 @@ from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import dateutil.parser
 
 
-currency = 'USD'  # JPY
+convert = 'USD'  # JPY
 
 url = 'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
 parameters = {
     # 'start':'1',
     # 'limit':'10',
-    'convert': currency
+    'convert': convert
 }
 headers = {
     'Accepts': 'application/json',
