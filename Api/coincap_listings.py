@@ -3,12 +3,12 @@
 # Updated by Shabbir Mousavi 2020
 
 import json
-from requests import Request, Session
+from requests import Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import dateutil.parser
 
 
-convert = 'USD'  # JPY
+convert = 'USD'
 
 url = 'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
 parameters = {
@@ -45,6 +45,7 @@ print(
 )
 
 for currency in data:
+    
     currency_id = currency['id']
     rank = currency['cmc_rank']
     name = currency['name']

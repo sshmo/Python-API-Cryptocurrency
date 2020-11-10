@@ -3,12 +3,10 @@
 # Updated by Shabbir Mousavi 2020
 
 import json
-from requests import Request, Session
+from requests import Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
-import dateutil.parser
 
-
-convert = 'USD'  # JPY
+convert = 'USD'
 
 while True:
 
@@ -56,10 +54,10 @@ while True:
 
     print()
     for currency in data:
+        
         rank = currency['cmc_rank']
         name = currency['name']
         symbol = currency['symbol']
-
         circulating_supply = int(currency['circulating_supply'])
         total_supply = int(currency['total_supply'])
 

@@ -4,11 +4,11 @@
 
 import dateutil.parser
 from datetime import datetime
-from requests import Request, Session
+from requests import Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 
-convert = 'USD'  # JPY
+convert = 'USD'
 
 url = 'https://sandbox-api.coinmarketcap.com/v1/global-metrics/quotes/latest'
 parameters = {
