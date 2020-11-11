@@ -57,17 +57,6 @@ while True:
     if choice == '0':
         break
 
-    parameters = {
-        'convert': convert
-    }
-
-    headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',
-    }
-
-    session = Session()
-    session.headers.update(headers)
 
     try:
         response = session.get(ticker_url, params=parameters)
