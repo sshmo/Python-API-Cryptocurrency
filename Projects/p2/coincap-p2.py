@@ -63,4 +63,4 @@ while True:
                 already_hit_symbols.append(symbol)
 
     print('...')
-    time.sleep(3)
+    time.sleep(300)

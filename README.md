@@ -1,21 +1,28 @@
 # Python-API-Cryptocurrency
 
-(*This project is an updated version of: ['Python-And-Cryptocurrencies-2018](https://github.com/phennaux/Python-and-cryptocurrencies)' created by Philippe Hennaux that was entirely made thanks to an Udemy course created by Ian Annase ['Python & Cryptocurrency: Build 5 Real World Applications-2018](https://www.udemy.com/coinmarketcap/)' The Public API that was used in ['Python & Cryptocurrency: Build 5 Real World Applications](https://www.udemy.com/coinmarketcap/)' was changed to ['Professional API](https://coinmarketcap.com/api/)' in 2018. Since then a lot of changes has occured.*)
+(*This project is an updated version of: ['Python-And-Cryptocurrencies-2018'](https://github.com/phennaux/Python-and-cryptocurrencies) created by Philippe Hennaux that was entirely made thanks to an Udemy course created by Ian Annase ['Python & Cryptocurrency: Build 5 Real World Applications-2018'](https://www.udemy.com/coinmarketcap/) The Public API that was used in ['Python & Cryptocurrency: Build 5 Real World Applications'](https://www.udemy.com/coinmarketcap/) was changed to ['Professional API'](https://coinmarketcap.com/api/) in 2018. Since then a lot of changes has occured.*)
 
 
-In this project we use the __*sandbox version*__ with the corresponding sandbox API key to retrieve data from ['sandbox-api.coinmarketcap.com](https://sandbox-api.coinmarketcap.com)'.
+In this project we use the __*sandbox version*__  of ['CoinMarketCap'](https://coinmarketcap.com) API with the corresponding sandbox API key to retrieve data from ['CoinMarketCap'](https://coinmarketcap.com).
 
-The CoinMarketCap API is a suite of high-performance RESTful JSON endpoints. ['See documentation](https://coinmarketcap.com/api/documentation/v1/#)'
+The CoinMarketCap API is a suite of high-performance RESTful JSON endpoints. ['See documentation'](https://coinmarketcap.com/api/documentation/v1/#)
 
-This Python project has 5 sub projects using sample cryptocurrency data from ['sandbox-api.coinmarketcap.com](https://sandbox-api.coinmarketcap.com)'.
+This Python project has 5 sub-projects using sample cryptocurrency data from ['sandbox-api.coinmarketcap.com'](https://sandbox-api.coinmarketcap.com).
 
 
-for obtaining live results, replace the url and API key as following:
+For obtaining live results, replace the url and API key in each python file as following:
 
-1. replace 'sandbox-api.coinmarketcap.com' 
-    with pro-api.coinmarketcap.com
-2. replace 'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c' 
-    with 'X-CMC_PRO_API_KEY': 'your API key'
+1. replace:
+
+    'sandbox-api.coinmarketcap.com' 
+    with 
+    pro-api.coinmarketcap.com
+
+2. replace: 
+
+    'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c' 
+    with
+    'X-CMC_PRO_API_KEY': 'your API key'
 
 
 The libraries used in this project are:
@@ -23,7 +30,9 @@ The libraries used in this project are:
 - **Prettytables** In order to display data into a table.
 - **Colorama** In order to add colors to a table.
 - **Requests** In order to request files, in this case JSON files.
+- **json** In order to convert json files to readable python objects.
 - **Datetime** In order to get the date and display it.
+- **python-dateutil** In order to convert iso-date to datetime format.
 
 With these libraries and the CoinMarketCap API the projects that the course proposed to build are:
 
