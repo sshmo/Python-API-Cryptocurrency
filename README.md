@@ -16,7 +16,7 @@ For obtaining live results, replace the url and API key in each python file as f
 
     'sandbox-api.coinmarketcap.com' 
     with 
-    pro-api.coinmarketcap.com
+    'pro-api.coinmarketcap.com'
 
 2. replace: 
 
