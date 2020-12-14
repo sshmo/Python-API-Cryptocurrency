@@ -39,22 +39,22 @@ The libraries used in this project are:
 
 With these libraries and the CoinMarketCap API the projects that the course proposed to build are:
 
-1. ***A Cryptocurrency Portfolio App***
+1. [***A Cryptocurrency Portfolio App***](https://github.com/sshmo/Python-API-Cryptocurrency/tree/master/Projects/p1)
 
     Track all of your crypto assets with ease. See the total value of all your crypto assets combined along with detailed information about each one. Positive and negative values are color coated green and red.
 
-2. ***A Real-Time Price Alert App***
+2. [***A Real-Time Price Alert App***](https://github.com/sshmo/Python-API-Cryptocurrency/tree/master/Projects/p2)
 
     Get notified when cryptocurrencies hit certain prices in USD. You can keep this program running in the background. Your computer will shout things like, 'Litecoin hit $1200!'.
 
-3. ***A Top 100 Cryptocurreny Ranking App***
+3. [***A Top 100 Cryptocurreny Ranking App***](https://github.com/sshmo/Python-API-Cryptocurrency/tree/master/Projects/p3)
 
     Sort by rank, daily percentage change, or daily volume. Positive and negative values are color coated green and red.
 
-4. ***Predict The Future Values of the Top 100 Cryptocurrencies***
+4. [***Predict The Future Values of the Top 100 Cryptocurrencies***](https://github.com/sshmo/Python-API-Cryptocurrency/tree/master/Projects/p4)
 
     Explore what the price of cryptocurrencies will be if the global market cap hits certain levels (such as world stock market levels)
 
-5. ***Store Real-Time Information on 1000 Cryptocurrencies in Excel using Python***
+5. [***Store Real-Time Information on 1000 Cryptocurrencies in Excel using Python***](https://github.com/sshmo/Python-API-Cryptocurrency/tree/master/Projects/p5)
 
     Learn to store cryptocurrency information inside of excel workbooks using Python.
